@@ -55,9 +55,26 @@ This section outlines the deployment and setup used to simulate brute-force atta
 ### 🌐 DVWA Setup Details
 
 - **Platform**: Windows 10  
-- **Application**: ![DVWA Logo](https://www.dvwa.co.uk/images/logo.png) **Damn Vulnerable Web Application**  
+- **Application**: Damn Vulnerable Web Application  
 - **Private IP Address**: `192.168.2.129`  
-- **Access URL**: [http://192.168.2.129/dvwa/](http://192.168.2.129/dvwa/)
+- **Access URL**: [http://192.168.2.129/dvwa/]
 
 DVWA is intentionally vulnerable and serves as the entry point for brute-force login attempts in this simulation. The attacker sends repeated POST requests to the login endpoint to trigger SIEM detection mechanisms.
+## 📡 Network Discovery and Victim Identification
 
+As part of the attack preparation phase, a **network reconnaissance** was performed using the `netdiscover` tool on **Kali Linux**. This step was crucial to identify active hosts within the subnet and locate the machine running the DVWA application.
+
+### 🔍 Command Used
+
+```bash
+netdiscover -r 192.168.2.0/16
+| IP Address        | MAC Address         | Vendor                    |
+| ----------------- | ------------------- | ------------------------- |
+| 192.168.2.1       | 00:50:56\:c0:00:08  | VMware, Inc.              |
+| 192.168.2.2       | 00:56:56\:d1:00:11  | VMware, Inc.              |
+| 192.168.2.100     | 00:56:56\:d1:00:12  | VMware, Inc.              |
+| 192.168.2.156     | 00:56:56\:d3\:f9:0e | VMware, Inc.              |
+| **192.168.2.129** | 00:56:56\:aa:12:45  | 🎯 **Target (DVWA Host)** |
+
+### ✅ The target system hosting DVWA was successfully identified at IP address:
+192.168.2.129
