@@ -77,12 +77,12 @@ netdiscover -r 192.168.12.0/16
 📸 Result Preview:
 The output displays a list of connected hosts along with their respective IP addresses, MAC addresses, and vendor information.
 
-### 🖥️ IP Address	🔒 MAC Address	🏷️ Vendor
-192.168.2.1	00:50:56:00:00:08	VMware, Inc.
-192.168.2.2	00:56:6d:11:dd:11	VMware, Inc.
-192.168.2.100	00:0c:29:00:19:12	VMware, Inc.
-192.168.2.156	00:0c:29:cf:f9:ee	VMware, Inc.
-192.168.2.254	00:50:56:f0:02:40	VMware, Inc.
+### 🖥️ IP Address	🔒 MAC Address   	🏷️ Vendor
+###   192.168.2.1	  00:50:56:00:00:08	  VMware, Inc.
+###   192.168.2.2	  00:56:6d:11:dd:11	  VMware, Inc.
+###   192.168.2.100	00:0c:29:00:19:12	  VMware, Inc.
+###   192.168.2.156	00:0c:29:cf:f9:ee	  VMware, Inc.
+###   192.168.2.254	00:50:56:f0:02:40	  VMware, Inc.
 
 ### 🎯 Objective:
 Identify the victim machine’s IP address from the discovered hosts to target in subsequent attack phases (such as brute-force login attempts on the DVWA web application).
