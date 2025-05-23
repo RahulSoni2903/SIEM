@@ -60,33 +60,32 @@ This section outlines the deployment and setup used to simulate brute-force atta
 - **Access URL**: [http://192.168.2.129/dvwa/]
 
 DVWA is intentionally vulnerable and serves as the entry point for brute-force login attempts in this simulation. The attacker sends repeated POST requests to the login endpoint to trigger SIEM detection mechanisms.
-### 🐉 Kali Linux (Attacker System)
+
+🐉 Kali Linux (Attacker System)
 Kali Linux operates as the attacker system in this simulated cybersecurity environment, responsible for reconnaissance and active attack phases against the victim system.
 
-### 🔍 Step 1️⃣ : Network Discovery
+🔍 Step 1️⃣ : Network Discovery
 The initial phase of the attack involves identifying all active hosts within the network. This is accomplished using the powerful netdiscover utility, which passively detects devices by capturing ARP requests and replies.
 
-![net](https://github.com/user-attachments/assets/f5b9051a-2b3c-46ec-b384-29fa333e252b)
+![net](https://github.com/user-attachments/assets/19612ee7-f75f-4b7c-aca3-e4cb92b701fb)
 
-### 📌 Command Executed:
-
+📌 Command Executed
 bash
 Copy
 Edit
 netdiscover -r 192.168.12.0/16
-📸 Result Preview:
+📊 Result Preview
 The output displays a list of connected hosts along with their respective IP addresses, MAC addresses, and vendor information.
 
-### 🖥️ IP Address	🔒 MAC Address   	🏷️ Vendor
-###   192.168.2.1	  00:50:56:00:00:08	  VMware, Inc.
-###   192.168.2.2	  00:56:6d:11:dd:11	  VMware, Inc.
-###   192.168.2.100	00:0c:29:00:19:12	  VMware, Inc.
-###   192.168.2.156	00:0c:29:cf:f9:ee	  VMware, Inc.
-###   192.168.2.254	00:50:56:f0:02:40	  VMware, Inc.
+🖥️ IP Address	🔒 MAC Address	🏷️ Vendor
+192.168.2.1	00:50:56:00:00:08	VMware, Inc.
+192.168.2.2	00:56:6d:11:dd:11	VMware, Inc.
+192.168.2.100	00:0c:29:00:19:12	VMware, Inc.
+192.168.2.156	00:0c:29:cf:f9:ee	VMware, Inc.
+192.168.2.254	00:50:56:f0:02:40	VMware, Inc.
 
-### 🎯 Objective:
+🎯 Objective
 Identify the victim machine’s IP address from the discovered hosts to target in subsequent attack phases (such as brute-force login attempts on the DVWA web application).
 
-### Key Role:
-Actively performs reconnaissance, discovering live hosts within the network to enumerate targets for further exploitation.
-
+🛡️ Key Role
+Actively performs network reconnaissance, discovering live hosts within the network to enumerate potential targets for further exploitation.
