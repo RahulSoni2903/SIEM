@@ -40,12 +40,13 @@ A Windows virtual machine serves as the **victim system**, hosting the DVWA (Dam
 This machine is targeted by the Kali Linux attacker for brute-force login attempts.
 
 **Key Role:** Victim endpoint being monitored by the SIEM server for malicious activities.
-![Screenshot (1)](https://github.com/user-attachments/assets/841cf526-168e-488a-a7d2-21fec9d95526)
+
 ## 🧪 Project Workflow
 
 This section outlines the deployment and setup used to simulate brute-force attacks against the DVWA environment and monitor them using a SIEM solution.
 
 ### 🖥️ Victim Machine: Windows 10
+![Screenshot (1)](https://github.com/user-attachments/assets/841cf526-168e-488a-a7d2-21fec9d95526)
 
 - The **Damn Vulnerable Web Application (DVWA)** is hosted on a **Windows 10** machine.
 - The environment is set up using a local web server stack (e.g., XAMPP or WAMP).
