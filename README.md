@@ -100,6 +100,5 @@ The scan revealed the following open ports on the victim machine:
 ### ➡️ Key Insight:
 From this scan, we identified that Port 80 (HTTP) and Port 443 (HTTPS) are open — indicating a web service is hosted on this victim system.
 Additionally, Port 3306 (MySQL) is open, but for this attack scenario, we will focus on exploiting the web application via ports 80 and 443.
-
-### 🖥️ Victim OS: Detected based on service headers — Windows 10
+🖥️ Victim OS: Detected based on service headers — Windows 10
 
