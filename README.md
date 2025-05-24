@@ -93,9 +93,9 @@ nmap 192.168.2.129 -Pn -sCV
 The scan revealed the following open ports on the victim machine:
 
 ### 🔓Open Ports
-80
-443
-3306
+80 (HTTP),
+443 (HTTPS),
+3306 (MySQL).
 
 ### ➡️ Key Insight:
 From this scan, we identified that Port 80 (HTTP) and Port 443 (HTTPS) are open — indicating a web service is hosted on this victim system.
