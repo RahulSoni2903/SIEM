@@ -61,3 +61,22 @@ This section outlines the deployment and setup used to simulate brute-force atta
 
 DVWA is intentionally vulnerable and serves as the entry point for brute-force login attempts in this simulation. The attacker sends repeated POST requests to the login endpoint to trigger SIEM detection mechanisms.
 
+### 🖥️ Attacker Machine: (Kali Linux)
+### 📌 Step 1: Discovery of Victim
+In this phase, the attacker performs a network discovery operation to identify active hosts within the network range 192.168.12.0/16. Using an ARP request/response capture tool, we detect devices that respond to ARP traffic, revealing their IP addresses, MAC addresses, and vendor information.
+
+### 📸 ScreenShot
+![net](https://github.com/user-attachments/assets/40ae610a-f395-40f0-a76c-defb8f2ecc34)
+
+Details of Captured Devices:
+
+### IP Address	MAC Address	Vendor
+192.168.2.1	00:50:56:00:00:08	VMware, Inc.
+192.168.2.2	00:56:56:fd:11:01	VMware, Inc.
+192.168.2.100	00:0c:29:09:12:1e	VMware, Inc.
+192.168.2.129	00:0c:29:f9:09:ed	VMware, Inc. (Victim Machine - Windows 10)
+192.168.2.254	00:50:56:16:02:40	VMware, Inc.
+
+### ➡️ Note:
+Among the discovered devices, our Victim Machine is a Windows 10 system with IP address 192.168.2.129. This machine will be the target for further attack simulation and SIEM detection in the subsequent steps.
+
