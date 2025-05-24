@@ -142,22 +142,55 @@ Wazuh is an open-source Security Information and Event Management (SIEM) solutio
 In this scenario, while the attacker operates from a Kali Linux machine and performs a brute-force attack against the DVWA web application, the attacker remains unaware that the Ubuntu Monitoring Server is actively tracking their activity.
 
 ### 📊 Wazuh Dashboard: Event Monitoring View
-This screenshot showcases the Wazuh Threat Hunting Dashboard, specifically monitoring the Windows10 agent (ID: 001) — which is the target machine in this simulation.
+
+This screenshot showcases the **Wazuh Threat Hunting Dashboard**, specifically monitoring the **Windows10 agent (ID: 001)** — which is the target machine in this simulation.
+
+---
 
 ### 📸 Screenshot:
-![logs ](https://github.com/user-attachments/assets/96b2eae3-8eef-4737-9cbb-ee5a7f73f000)
+
+![logs](https://github.com/user-attachments/assets/96b2eae3-8eef-4737-9cbb-ee5a7f73f000)
+
+---
 
 ### 📌 What We See:
-A list of 495 security event hits within the specified date range.
-Event types include:
-Windows Logon Success
-Software Protection Service logs
-Detected vulnerabilities like CVE-2022-30168 and CVE-2023-28303 affecting Windows applications.
+
+- A list of **495 security event hits** within the specified date range.
+- Event types include:
+  - **Windows Logon Success**
+  - **Software Protection Service logs**
+  - Detected vulnerabilities like:
+    - **CVE-2022-30168**
+    - **CVE-2023-28303**
+  - These vulnerabilities affect Windows applications such as **Photos** and **Snip & Sketch**.
+
+---
 
 ### 📅 Detailed Date & Time Stamps:
+
 Each log entry is recorded with:
-Exact date
-Precise timestamp
-Related rule description
-Severity level (rule.level)
-Unique rule ID
+- 📅 **Exact date**
+- 🕒 **Precise timestamp**
+- 📜 **Related rule description**
+- ⚠️ **Severity level (rule.level)**
+- 🆔 **Unique rule ID**
+
+---
+
+### 📌 Why It’s Important:
+
+Using this log view, a **SOC (Security Operations Center) engineer** can:
+
+- 🕵️‍♂️ Track exactly **how many attempts an attacker made**.
+- 📅 Identify the **exact date and time** of each attack attempt or event.
+- ⚠️ Prioritize and respond to critical events based on **severity level (rule.level)**.
+- 📖 Perform **forensic investigation** and trace attacker behavior in a **timeline format**.
+
+---
+
+**In this case:**
+
+👉 The brute-force attempts and event logs captured from the **attacker’s activity** are fully visible to the monitoring engineer — while the attacker stays unaware that their actions are being logged and analyzed in real-time.
+
+**This is the power of Wazuh integrated into a proactive SOC setup.** 🔒✅
+
