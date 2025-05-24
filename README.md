@@ -122,6 +122,6 @@ hydra -l admin -P rockyou.txt 192.168.2.129 http-post-form "/DVWA/login.php:user
 Hydra identified 16 possible valid passwords for the admin user account during the brute-force attempt.
 
 ### ✅ Successfully Logged In
-Username: admin
-Password: password
-Used this combination to successfully gain access to the DVWA web application.
+***Username: admin***,
+***Password: password***
+### Used this combination to successfully gain access to the DVWA web application.
