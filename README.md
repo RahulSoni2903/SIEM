@@ -125,4 +125,21 @@ Hydra identified 16 possible valid passwords for the admin user account during t
 ***Username: admin***,
 ***Password: password***
 
+### 🖥️ Monitoring Server: (Ubuntu)
+This machine runs Ubuntu OS and is configured as a Wazuh Security Monitoring Server.
+### 📸 ScreenShot
+![Wazuh](https://github.com/user-attachments/assets/abe33b81-cbf6-49da-b3d0-fb3b86249b9f)
+
+### 📌 About Wazuh:
+Wazuh is an open-source Security Information and Event Management (SIEM) solution designed to monitor endpoints, servers, and network infrastructure for suspicious activity, system events, and security breaches. It collects and analyzes logs from multiple sources, detects anomalies, and generates real-time alerts for potential security threats.
+
+### 📊 Current Setup:
+Operating System: Ubuntu
+Service Running: Wazuh Manager & Dashboard
+Monitored Agents: Windows 10 endpoint (192.168.2.129)
+
+### 🕵️ Tracking the Attacker:
+In this scenario, while the attacker operates from a Kali Linux machine and performs a brute-force attack against the DVWA web application, the attacker remains unaware that the Ubuntu Monitoring Server is actively tracking their activity.
+
+
 
