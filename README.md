@@ -123,12 +123,21 @@ The scan revealed the following open ports on the victim machine:
 
 - 📌 Detected based on service headers: **Windows 10**
 
+### 🌐 Website Detection:
 
+---
 
-### 📸 ScreenShot
+### 📸 Screenshot:
+
 ![dvwal](https://github.com/user-attachments/assets/1ec522ac-63ef-46e1-b275-f5b5f39e784a)
+
+---
+
 ### ➡️ Observed Behavior:
-When accessing http://192.168.2.129 (the victim's IP address) through a web browser, it presented the login page for Damn Vulnerable Web Application (DVWA) — confirming that a vulnerable web application is actively hosted on the target system.
+
+- 🖥️ When accessing **http://192.168.2.129** (the victim's IP address) through a web browser, it presented the **login page for Damn Vulnerable Web Application (DVWA)**.
+- ✅ This confirms that a **vulnerable web application is actively hosted on the target system**.
+
 
 ### 🔐 Brute-Force Attack on DVWA Login Page (HTTP)
 ### ➡️ Tool Used:
