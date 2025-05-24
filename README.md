@@ -194,3 +194,42 @@ Using this log view, a **SOC (Security Operations Center) engineer** can:
 
 **This is the power of Wazuh integrated into a proactive SOC setup.** 🔒✅
 
+### 📊 Final Detection Attempt — Log Analysis Summary
+### 📸 Screenshot:
+![logdetails](https://github.com/user-attachments/assets/12d423c9-5b4f-4053-b7eb-36ab4357cf69)
+
+In this final detection attempt:
+
+- 🔍 The **SOC engineer** closely monitors the Wazuh Threat Hunting dashboard.
+- 📄 Observes a **Windows Logon Success event** associated with a suspicious actor.
+- 🖥️ Target system: **Windows10 agent (ID: 001)**
+- 🕒 **Exact date and time** are recorded, ensuring traceable evidence.
+- 📑 Event includes:
+  - **Event type**: Windows Logon Success  
+  - **Rule ID**: 🆔 60106  
+  - **Severity Level**: ⚠️ 3  
+
+---
+
+### 📌 Security Operations Center (SOC) Action:
+
+- 🚨 **Immediate Priority Response** initiated:
+  - 🚫 Block the attacker's account or IP address.
+  - 🔍 Investigate the method of access and any privilege escalation.
+  - 🛡️ Isolate the affected machine to contain potential spread.
+  - 📝 Document the incident with timestamps and logs for post-incident review.
+
+---
+
+### ✅ Proactive Detection & Response Benefit:
+
+✔️ This detection showcases how **real-time log monitoring with Wazuh** empowers SOC teams to:
+- 📈 Quickly identify unauthorized access attempts.
+- 🧑‍💻 Take faster incident response decisions.
+- 🔐 Strengthen the organization’s overall security posture.
+
+👉 This is a **core advantage** of integrating Wazuh into modern SOC environments:  
+**efficient detection, rapid analysis, and immediate, evidence-based response.**
+
+
+
