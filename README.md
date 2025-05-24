@@ -106,3 +106,24 @@ Additionally, Port 3306 (MySQL) is open, but for this attack scenario, we will f
 ![dvwal](https://github.com/user-attachments/assets/1ec522ac-63ef-46e1-b275-f5b5f39e784a)
 ### ➡️ Observed Behavior:
 When accessing http://192.168.2.129 (the victim's IP address) through a web browser, it presented the login page for Damn Vulnerable Web Application (DVWA) — confirming that a vulnerable web application is actively hosted on the target system.
+
+### 🔐 Brute-Force Attack on DVWA Login Page (HTTP)
+### ➡️ Tool Used:
+Hydra v9.5
+
+### ➡️ Attack Description:
+Performed a brute-force attack on the DVWA login page hosted at http://192.168.2.129/DVWA/login.php using Hydra and a password wordlist (rockyou.txt).
+
+### ➡️ Hydra Command Executed:
+hydra -l admin -P rockyou.txt 192.168.2.129 http-post-form "/DVWA/login.php:username=^USER^&password=^PASS^&Login=Login:Username and/or password incorrect."
+### 📸 Attack Screenshot:
+➡️ Findings:
+Hydra identified 16 possible valid passwords for the admin user account during the brute-force attempt.
+
+✅ Successfully Logged In
+
+Username: admin
+
+Password: password
+
+Used this combination to successfully gain access to the DVWA web application.
