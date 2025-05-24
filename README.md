@@ -142,6 +142,8 @@ The scan revealed the following open ports on the victim machine:
 ### 🔐 Brute-Force Attack on DVWA Login Page (HTTP)
 ### ➡️ Tool Used:
 Hydra v9.5
+### 📸 Screenshot:
+![hydra](https://github.com/user-attachments/assets/cb895b04-f07a-4f1c-8743-38a7e440ef14)
 
 ### ➡️ Attack Description:
 Performed a brute-force attack on the DVWA login page hosted at http://192.168.2.129/DVWA/login.php using Hydra and a password wordlist (rockyou.txt).
