@@ -70,12 +70,12 @@ In this phase, the attacker performs a network discovery operation to identify a
 
 Details of Captured Devices:
 
-### IP Address	MAC Address	Vendor
-192.168.2.1	00:50:56:00:00:08	VMware, Inc.
-192.168.2.2	00:56:56:fd:11:01	VMware, Inc.
-192.168.2.100	00:0c:29:09:12:1e	VMware, Inc.
-192.168.2.129	00:0c:29:f9:09:ed	VMware, Inc. (Victim Machine - Windows 10)
-192.168.2.254	00:50:56:16:02:40	VMware, Inc.
+### IP Address 
+192.168.2.1,
+192.168.2.2,
+192.168.2.100,	
+192.168.2.129 (Victim Machine - Windows 10),
+192.168.2.254
 
 ### ➡️ Note:
 Among the discovered devices, our Victim Machine is a Windows 10 system with IP address 192.168.2.129. This machine will be the target for further attack simulation and SIEM detection in the subsequent steps.
