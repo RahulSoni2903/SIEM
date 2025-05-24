@@ -124,4 +124,4 @@ Hydra identified 16 possible valid passwords for the admin user account during t
 ### ✅ Successfully Logged In
 ***Username: admin***,
 ***Password: password***
-### Used this combination to successfully gain access to the DVWA web application.
+
