@@ -102,3 +102,7 @@ From this scan, we identified that Port 80 (HTTP) and Port 443 (HTTPS) are open 
 Additionally, Port 3306 (MySQL) is open, but for this attack scenario, we will focus on exploiting the web application via ports 80 and 443.
 🖥️ Victim OS: Detected based on service headers — Windows 10
 
+### 📸 ScreenShot
+![dvwal](https://github.com/user-attachments/assets/1ec522ac-63ef-46e1-b275-f5b5f39e784a)
+### ➡️ Observed Behavior:
+When accessing http://192.168.2.129 (the victim's IP address) through a web browser, it presented the login page for Damn Vulnerable Web Application (DVWA) — confirming that a vulnerable web application is actively hosted on the target system.
