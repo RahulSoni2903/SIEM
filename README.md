@@ -80,3 +80,26 @@ Details of Captured Devices:
 ### ➡️ Note:
 Among the discovered devices, our Victim Machine is a Windows 10 system with IP address 192.168.2.129. This machine will be the target for further attack simulation and SIEM detection in the subsequent steps.
 
+### 📌 Step 2: Nmap Scanning on Victim
+In this phase, we target our previously identified Victim Machine — a Windows 10 system with IP address 192.168.2.129 — using Nmap to discover open ports and services running on it.
+
+### 🔍 Nmap Command Used:
+nmap 192.168.2.129 -Pn -sCV
+
+### 📸 Screenshot:
+![NMAP](https://github.com/user-attachments/assets/1f8ec5ea-945a-4cec-b739-22f7fa3793d1)
+
+### 📝 Scan Summary:
+The scan revealed the following open ports on the victim machine:
+
+### 🔓Open Ports
+80
+443
+3306
+
+### ➡️ Key Insight:
+From this scan, we identified that Port 80 (HTTP) and Port 443 (HTTPS) are open — indicating a web service is hosted on this victim system.
+Additionally, Port 3306 (MySQL) is open, but for this attack scenario, we will focus on exploiting the web application via ports 80 and 443.
+
+### 🖥️ Victim OS: Detected based on service headers — Windows 10
+
